@@ -22,7 +22,7 @@ Project Flow:
 ![Project Flow](./utils/diagram1.png)
 
 Project Flow in Detail:
-![Project Flow in Detail](./utils/diagram1.png)
+![Project Flow in Detail](./utils/diagram2.png)
 
 ## Features
 
