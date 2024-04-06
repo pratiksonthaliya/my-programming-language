@@ -46,11 +46,37 @@ npm install my-programming-language
 
 To use my-programming-language, you can import the compile function and pass your code to it:
 
-#### NOTE: Create Your Code File
+#### To Run Your Code
+
+Step 1: Create a new folder and RUN below commmand on terminal
+```sh
+npm init -y
+```
+
+Step 2:
 - Create a file named 'index.mjs' in your project directory.
+- Copy below code in 'index.mjs' file.
 
-To Run Your Code
+```js
+import compile from "my-programming-language";
 
+compile(`
+    maanlo x = 5;
+    jabtak (x > 0) {
+        bolo x;
+        x = x - 1;
+    }
+
+    agar (x == 0) {
+        bolo 5 + x;
+    }
+    warna {
+        bolo 4 - x;
+    }
+`);
+```
+
+Step 3: RUN below commmand on terminal
 ```sh
 node index.mjs
 ```
