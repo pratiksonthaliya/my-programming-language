@@ -23,13 +23,13 @@ export default function lexer(input) {
         word === "maanlo" ||
         word === "bolo" ||
         word === "agar" ||
-        word === "warna"
+        word === "warna" ||
+        word === "jabtak"
       ) {
         tokens.push({ type: "keyword", value: word });
       } else {
         tokens.push({ type: "identifier", value: word });
       }
-
       continue;
     }
 
@@ -45,6 +45,13 @@ export default function lexer(input) {
       continue;
     }
 
+    //brackets
+    if (/[\(\)\{\}]/.test(char)) {
+      tokens.push({ type: "bracket", value: char });
+      cursor++;
+      continue;
+    }
+
     //operator
     if (/[\+\-\*\/=]/.test(char)) {
       tokens.push({ type: "operator", value: char });
@@ -53,6 +60,12 @@ export default function lexer(input) {
     }
     if (/(?:==|!=|<=|>=|<|>)/.test(char)) {
       tokens.push({ type: "operator", value: char });
+      cursor++;
+      continue;
+    }
+
+    if (/[\;]/.test(char)) {
+      tokens.push({ type: "terminator", value: char });
       cursor++;
       continue;
     }

@@ -1,14 +1,15 @@
 {
   "name": "my-programming-language",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.3",
   "main": "compile.js",
   "scripts": {
+    "start": "node compile.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["my-programming-language", "desi-bhasha", "hindi-computer-language"],
+  "author": "Pratik Sonthaliya",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "description": "my-programming-language is a project-based programming language implemented in JavaScript. It features a lexer, parser, and code generator that run internally, demonstrating the process of building a simple programming language from scratch."
 
 }
