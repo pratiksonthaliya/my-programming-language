@@ -60,7 +60,7 @@ node index.mjs
 Here's a simple example program in [Your Programming Language Name] that counts down from 5 and prints different values based on the final value of x:
 
 ```js
-import compile from "your-programming-language";
+import compile from "my-programming-language";
 
 compile(`
     maanlo x = 5;
