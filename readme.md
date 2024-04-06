@@ -16,6 +16,12 @@
 
 my-programming-language is a project-based programming language implemented in JavaScript. It features a lexer, parser, and code generator that run internally, demonstrating the process of building a simple programming language from scratch.
 
+Project Flow:
+![Project Flow](./utils/diagram1.png)
+
+Project Flow in Detail:
+![Project Flow in Detail](./utils/diagram1.png)
+
 ## Features
 
 - **Conceptual Learning**: Provides a hands-on approach to understanding lexing, parsing, and code generation.

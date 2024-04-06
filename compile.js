@@ -1,6 +1,6 @@
-import lexer from "./lexer.js";
-import parser from "./parser.js";
-import codeGenerator from "./codeGeneratorJS.js";
+import lexer from "./components/lexer.js";
+import parser from "./components/parser.js";
+import codeGenerator from "./components/codeGeneratorJS.js";
 // import { code } from "./code.js";
 
 function runner(input) {
